@@ -1,0 +1,17 @@
+{
+  "name": "liquid-is-fun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "shopify theme dev --store=liquidisfun",
+    "watch": "npx tailwindcss -i ./tw-input.css -o ./assets/tw-output.css --minify --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "tailwindcss": "^3.4.10"
+  }
+}

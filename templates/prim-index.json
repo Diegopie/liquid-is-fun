@@ -1,0 +1,11 @@
+{
+  "layout": "primary",
+  "sections": {
+    "prim-home": {
+      "type": "prim-hero"
+    }
+  },
+  "order": [
+    "prim-home"
+  ]
+}

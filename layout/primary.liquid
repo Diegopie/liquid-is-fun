@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js supports-no-cookies" lang="{{  request.locale }}">
+  <head>
+    {{ 'tw-output.css' | asset_url | stylesheet_tag }}
+    {{ content_for_header }}
+  </head>
+  <body>
+    <a
+      class="absolute z-50 -left-72 p-3 h-0.5 w-0.5 bg-white focus-visible:left-auto focus-visible:h-auto focus-visible:w-auto"
+      href="#MainContent"
+    >
+      {{- 'general.accessibility.skip_to_content' | t -}}
+    </a>
+    <nav>
+      <ul class="flex flex-row gap-3">
+        <li>This</li>
+        <li>is</li>
+        <li>nav</li>
+        <li>bar</li>
+      </ul>
+    </nav>
+    <main id="MainContent" data-template="{{ template | escape }}">
+      {{ content_for_layout }}
+    </main>
+  </body>
+</html>
